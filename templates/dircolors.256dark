@@ -1,3 +1,85 @@
+# Special files
+
+NORMAL 00
+# reset to "normal" color
+RESET 0
+
+# regular file
+# No color at all
+FILE 00
+
+# files with executable flag
+# system red in bold and underlined
+EXEC 04;01;31
+
+# directory
+# white on dark blue background
+# DIR 48;5;4;38;5;15;
+# bold and reversed
+DIR 07;01
+
+# symbolic link. (If you set this to 'target' instead of a
+# numerical value, the color is as for the file pointed to.)
+# white on light green background
+LINK 48;5;2;38;5;15;
+
+# symlink to nonexistent file, or non-stat'able file
+# white on red background
+ORPHAN 48;5;160;38;5;15;
+
+# ORPHAN 48;5;160;38;5;15;01 # <-bold
+# ORPHAN 48;5;235;38;5;160 # red on gray
+
+# regular file with more than one link
+# No color at all
+MULTIHARDLINK 00
+
+# named pipe
+# white on dark green background
+FIFO 48;5;8;38;5;15
+
+# socket
+# white on light blue background
+SOCK 48;5;12;38;5;15;
+
+# block device driver
+# white on brown background
+BLK 48;5;1;38;5;15
+
+# door
+# white on orange background
+DOOR 48;5;9;38;5;15
+
+# character device driver
+# white on pink background
+CHR 48;5;5;38;5;15
+
+# file that is setuid (u+s)
+# white on cyan background
+SETUID 48;5;14;38;5;15
+
+# file that is setgid (g+s)
+# white on gray background
+SETGID 48;5;0;38;5;15
+
+# file with capability
+# white on yellow background
+CAPABILITY 48;5;226;38;5;15
+
+# dir that is sticky and other-writable (+t,o+w)
+# white on purple background
+STICKY_OTHER_WRITABLE 48;5;55;38;5;15
+
+# dir that is other-writable (o+w) and not sticky
+# white on violet background
+OTHER_WRITABLE 48;5;93;38;5;15
+
+# dir with the sticky bit set (+t) and not other-writable
+# white on pink background
+STICKY 48;5;129;38;5;15
+
+# Filetypes
+
 # archives
 .7z 00;38;5;{archive_color}
 .Z 00;38;5;{archive_color}
