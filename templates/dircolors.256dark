@@ -320,6 +320,7 @@ STICKY 48;5;129;38;5;15
 .java 01;38;5;{sourcecode_color}
 .js 01;38;5;{sourcecode_color}
 .lisp 01;38;5;{sourcecode_color}
+.lua 01;38;5;{sourcecode_color}
 .php 01;38;5;{sourcecode_color}
 .pl 01;38;5;{sourcecode_color}
 .py 01;38;5;{sourcecode_color}
@@ -350,6 +351,8 @@ STICKY 48;5;129;38;5;15
 .cabal 01;38;5;{dev_color}
 .cfg 01;38;5;{dev_color}
 .conf 01;38;5;{dev_color}
+.config 01;38;5;{dev_color}
+.svn 01;38;5;{dev_color}
 .gitignore 01;38;5;{dev_color}
 .gitmodules 01;38;5;{dev_color}
 .gpg 01;38;5;{dev_color}
@@ -362,21 +365,24 @@ STICKY 48;5;129;38;5;15
 
 # data
 .csv 01;38;5;{data_color}
+.dat 01;38;5;{data_color}
 .json 01;38;5;{data_color}
 .sqlite3 01;38;5;{data_color}
 .xml 01;38;5;{data_color}
+.yaml 01;38;5;{data_color}
 .yml 01;38;5;{data_color}
 
 # markup & style
 .css 01;38;5;{markup_color}
 .htm 01;38;5;{markup_color}
 .html 01;38;5;{markup_color}
-.mustache 01;38;5;{markup_color}
-.xhtml 01;38;5;{markup_color}
-.xml 01;38;5;{markup_color}
 .less 01;38;5;{markup_color}
+.mustache 01;38;5;{markup_color}
 .sass 01;38;5;{markup_color}
 .scss 01;38;5;{markup_color}
+.theme 01;38;5;{markup_color}
+.xhtml 01;38;5;{markup_color}
+.xml 01;38;5;{markup_color}
 
 # unimportant files
 *# 00;38;5;{unimportant_color}
@@ -389,10 +395,12 @@ STICKY 48;5;129;38;5;15
 .bu 00;38;5;{unimportant_color}
 .cache 00;38;5;{unimportant_color}
 .class 00;38;5;{unimportant_color}
+.elc 00;38;5;{unimportant_color}
 .incomplete 00;38;5;{unimportant_color}
 .lof 00;38;5;{unimportant_color}
 .lol 00;38;5;{unimportant_color}
 .lot 00;38;5;{unimportant_color}
+.old 00;38;5;{unimportant_color}
 .out 00;38;5;{unimportant_color}
 .part 00;38;5;{unimportant_color}
 .project 00;38;5;{unimportant_color}
@@ -403,19 +411,20 @@ STICKY 48;5;129;38;5;15
 .toc 00;38;5;{unimportant_color}
 
 # text
-.txt 00;38;5;{text_color}
-.tex 00;38;5;{text_color}
+.markdown 00;38;5;{text_color}
 .md 00;38;5;{text_color}
 .mkd 00;38;5;{text_color}
-.markdown 00;38;5;{text_color}
+.nfo 00;38;5;{text_color}
 .org 00;38;5;{text_color}
 .pandoc 00;38;5;{text_color}
 .rst 00;38;5;{text_color}
-.nfo 00;38;5;{text_color}
+.tex 00;38;5;{text_color}
+.txt 00;38;5;{text_color}
 
 # office
 .doc 00;38;5;{office_color}
 .docx 00;38;5;{office_color}
+.ics 00;38;5;{office_color}
 .odp 00;38;5;{office_color}
 .ods 00;38;5;{office_color}
 .odt 00;38;5;{office_color}
