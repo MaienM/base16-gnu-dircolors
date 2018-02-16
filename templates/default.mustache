@@ -4,6 +4,7 @@
 # hex to ansi escape code stolen from Micah Elliott (http://MicahElliott.com)
 # {{scheme-name}} scheme by {{scheme-author}}
 import re
+import os.path
 
 
 hex_colors = {
@@ -349,12 +350,36 @@ def hex2aec(rgb):
     return HEX2AEC_DICT[res]
 
 
-HEX2AEC_DICT, SHORT2RGB_DICT = _create_dicts()
+def inject_color(dircolors, template):
+    """ inject the color variables into the template
+    """
+    with open(template, 'r') as t:
+        for line in t:
+            print(line.format(**dircolors))
 
 
 if __name__ == '__main__':
+    HEX2AEC_DICT, SHORT2RGB_DICT = _create_dicts()
     colors = {}
     for k, v in hex_colors.items():
         colors[k] = hex2aec(v)
 
-    print(colors)
+    # map basecolors to dircolor variables
+    dircolors = {
+        'archive_color': colors['color06'],
+        'image_color': colors['color07'],
+        'audio_color': colors['color08'],
+        'video_color': colors['color09'],
+        'sourcecode_color': colors['color10'],
+        'dev_color': colors['color11'],
+        'data_color': colors['color12'],
+        'markup_color': colors['color13'],
+        'unimportant_color': colors['color14'],
+        'text_color': colors['color15'],
+        'office_color': colors['color16']
+    }
+
+    # TODO let template passed in or embedd
+    template = os.path.join(os.path.dirname(__file__),
+                            '../templates/dircolors.256dark')
+    inject_color(dircolors, template)
