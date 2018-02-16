@@ -429,10 +429,14 @@ STICKY 48;5;129;38;5;15
 .ods 00;38;5;{office_color}
 .odt 00;38;5;{office_color}
 .odt 00;38;5;{office_color}
-.pdc 00;38;5;{office_color}
-.pdf 00;38;5;{office_color}
 .ppt 00;38;5;{office_color}
 .pptx 00;38;5;{office_color}
 .rtf 00;38;5;{office_color}
 .xls 00;38;5;{office_color}
 .xlsx 00;38;5;{office_color}
+
+# documents
+.epub 00;38;5;{document_color}
+.mobi 00;38;5;{document_color}
+.pdc 00;38;5;{document_color}
+.pdf 00;38;5;{document_color}
