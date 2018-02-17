@@ -32,7 +32,7 @@ Either method A or B.
 Store the output of the generated python script:
 
 ``` bash
-./path/to/gen_dircolors.py > ~/.dircolors.256dark
+python /path/to/gen_dircolors.py > ~/.dircolors.256dark
 ```
 
 And use it:
@@ -116,7 +116,7 @@ Further reading
 
 File | Style
 ---- | -----
-Dev relevant files | bold
+Dev related files | bold
 Directories | bold and reversed
 Executable files | system red and bold
 Special files (links, pipes...) | white on an colorful background
