@@ -14,7 +14,7 @@ The GNU version of ls allows more suffisticated color definitions.
 
 ## Preview
 
-![Base16 GNU dircolors](https://raw.github.com/embayer/base16-shell/master/base16-gnu-dircolors.png)
+![Base16 GNU dircolors](https://github.com/embayer/base16-gnu-dircolors/raw/master/base16-gnu-dircolors.png)
 
 Scheme: [Zenburn](https://github.com/elnawe/base16-zenburn-scheme)
 
