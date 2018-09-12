@@ -76,7 +76,7 @@ EXEC 04;01;31
 # white on dark blue background
 # DIR 48;5;4;38;5;15;
 # bold and reversed
-DIR 07;01
+DIR 30;47;01
 
 # symbolic link. (If you set this to 'target' instead of a
 # numerical value, the color is as for the file pointed to.)
